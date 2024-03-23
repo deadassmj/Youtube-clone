@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="styles/video.css">
+	<link rel="stylesheet" href="styles/header.css">
+ <style>
+ p {
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+	  div {
+	  font-family: Roboto;
+	  }
+     
+	 body {
+	 margin: 0;
+	 padding-top: 80px;
+	 padding-left: 86px;
+	 padding-right: 24px;
+	 background-color: rgb(248,248,248);
+	 
+	 }
+	 
+ .sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 72px;
+   z-index: 200;
+   padding-top: 5px;
+  }
+  
+  .sidebar-link {
+  height: 74px;
+  margin-bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .sidebar-link:hover {
+    background-color: lightgray;
+  }
+  
+  .sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+  }
+  
+  .sidebar-link div {
+  font-family: roboto,arial;
+  font-size: 10px;
+  
+  }
+   </style>
+  </head>
+  <body>
+
+  <div class="header">
+  <div class="left-section">
+   <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+   <img class="youtube-logo" src="icons/youtube-logo.svg">
+  </div>
+  <div class="middle-section">
+  <input class="search-bar" type="text" placeholder="Search">
+  <button class="search-button">
+  <img class="search-icon" src="icons/search.svg">
+  <div class="tooltip">Search</div>
+  </button>
+  <button class="voice-search-button">
+  <img class="voice-icon" src="icons/voice-search-icon.svg">
+  <div class="tooltip">Search with your voice</div>
+  </button>
+  </div>
+   <div class="right-section">
+   <div class="upload-icon-container">
+   <img class="video-icon" src="icons/upload.svg">
+   <div class="tooltip">Create</div>
+   </div>
+   <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+   <div class="notifications-icon-container">
+   <img class="notifications-icon" src="icons/notifications.svg">
+   <div class="notifications-count">3</div>
+   </div>
+   <img class="my-profile" src="thumbnails/gojo.jpg">
+   </div>
+ </div>
+ 
+ <div class="sidebar">
+   <div class="sidebar-link"><img src="icons/home.svg"><div>Home</div></div>
+   <div class="sidebar-link"><img src="icons/explore.svg"><div>Explore</div></div>
+   <div class="sidebar-link"><img src="icons/subscriptions.svg"><div>Subscriptions</div></div>
+   <div class="sidebar-link"><img src="icons/originals.svg"><div>Originals</div></div>
+   <div class="sidebar-link"><img src="icons/youtube-music.svg"><div>Youtube Music</div></div>
+   <div class="sidebar-link"><img src="icons/library.svg"><div>Library</div></div>
+ </div>
+ 
+ <div class="video-grid">
+<div class="video-preview">
+  <div class="thumbnail-row"> 
+     <img class="thumbnail" src="thumbnails/2ed2ad239025d6301c2c9f8c9ade605c.jpg">
+	 <div class="video-time">14:20</div>
+  </div>
+  <div class="video-info-grid">
+   <div class="channel-picture">
+     <img class="profile-picture" src="thumbnails/f0389a792f8f04525e1d74799351fe91.jpg">
+  </div>
+    <div class="video-info">
+          <p class="video-title">
+            Unveiling Kokushibo: The Enigmatic Power of Upper Moon One
+          </p>
+          <p class="video-author">
+            CelestialBladeChronicles
+          </p>
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+		  </div>
+		</div>
+    </div>
+ 
+ <div class="video-preview">
+ <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/IMG_20240303_231320.jpg">
+		<div class="video-time">8:22</div>
+		</div>
+		 <div class="video-info-grid">
+		<div class="channel-picture">
+		<img class="profile-picture" src="thumbnails/geto.jpg">
+		</div>
+	    <div class="video-info">
+		<p class="video-title">
+            The Legend of Gojo Satoru: Unleashing the Chaos
+          </p>
+          <p class="video-author">
+            SatoruSupremacy
+          </p>
+          <p class="video-stats">
+            143M views &#183; 1 month ago
+          </p>
+		</div>    
+      </div>
+    </div>
+	
+<div class="video-preview">
+  <div class="thumbnail-row"> 
+     <img class="thumbnail" src="thumbnails/IMG_20240303_231329.jpg">
+	 <div class="video-time">9:13</div>
+  </div>
+  <div class="video-info-grid">
+   <div class="channel-picture">
+     <img class="profile-picture" src="thumbnails/30b967b7f06d4757516f7df3e521450f.jpg">
+  </div>
+    <div class="video-info">
+          <p class="video-title">
+            Into the Shadows: Exploring Megumi Fushiguro's Journey
+          </p>
+          <p class="video-author">
+            VeilofthePhantom	
+          </p>
+          <p class="video-stats">
+            12M views &#183; 1 Year ago
+          </p>
+		  </div>
+		</div>
+    </div>
+ 
+ <div class="video-preview">
+ <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/7e7c31290aea1c11be34005fada03596.jpg">
+		<div class="video-time">3:40</div>
+		</div>
+		 <div class="video-info-grid">
+		<div class="channel-picture">
+		<img class="profile-picture" src="thumbnails/2731e4c4884026e8e1b8ee8a17cbfc07.jpg">
+		</div>
+	    <div class="video-info">
+		<p class="video-title">
+           Solo Leveling's Jinwoo: From Zero to Hero 
+          </p>
+          <p class="video-author">
+           RoyalShadowReverie
+          </p>
+          <p class="video-stats">
+            519K views &#183; 1 year ago
+          </p>
+		</div>    
+      </div>
+    </div>
+
+<div class="video-preview">
+  <div class="thumbnail-row"> 
+     <img class="thumbnail" src="thumbnails/823d37f4def3e5e88db2c52567a1bcaf.jpg">
+	 <div class="video-time">19:10</div>
+  </div>
+  <div class="video-info-grid">
+   <div class="channel-picture">
+     <img class="profile-picture" src="thumbnails/7e8967f7378c925f7ddca0e44dac2b17.jpg">
+  </div>
+    <div class="video-info">
+          <p class="video-title">
+             Asta's Ascension - The Ultimate Power Unleashed
+          </p>
+          <p class="video-author">
+             AstaFable
+          </p>
+          <p class="video-stats">
+             519K views &#183; 2 years ago
+          </p>
+		  </div>
+		</div>
+    </div>
+ 
+ <div class="video-preview">
+ <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/cc63ae69416c9f60c6f465471bd3cc66.jpg">
+		<div class="video-time">18:40</div>
+		</div>
+		 <div class="video-info-grid">
+		<div class="channel-picture">
+		<img class="profile-picture" src="thumbnails/fb1c939e31be757d3c4f48e8da8cc779.jpg">
+		</div>
+	    <div class="video-info">
+		<p class="video-title">
+            Elegance Amidst Chaos: Aizen's Enigmatic Dance in Bleach's Shadowy Realm
+          </p>
+          <p class="video-author">
+            AizenAficionado
+          </p>
+          <p class="video-stats">
+            141M views &#183; 1 year ago
+          </p>
+		</div> 
+      </div>
+    </div>
+	
+	
+  </body>
+</html>
